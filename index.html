@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The focus Event</h2>
+
+Enter your name: <input type="text" id="first" onfocus="myFunctionOne()" onfocusout="clean1()">
+Enter your name: <input type="text" id="second" onfocus="myFunctionSecond()" onfocusout="clean2()">
+
+<p>When the input field gets focus, a function changes the background-color.</p>
+
+<script>
+function myFunctionOne() {
+	var first = document.getElementById('first');
+    first.style.background = "yellow";
+}
+function clean1() {
+	var first = document.getElementById('first');
+    first.style.background = "transparent";
+}
+
+function myFunctionSecond() {
+	var second = document.getElementById('second');
+    second.style.background = "blue";
+}
+function clean2() {
+	var second = document.getElementById('second');
+    second.style.background = "transparent";
+}
+</script>
+
+</body>
+</html>
